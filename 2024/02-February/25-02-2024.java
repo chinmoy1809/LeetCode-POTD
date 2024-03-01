@@ -9,7 +9,6 @@ import java.util.*;
 class Solution {
     public boolean canTraverseAllPairs(int[] nums) {
         if(nums.length == 1) return true;
-        int n = nums.length;
         int maxElement = Arrays.stream(nums).max().getAsInt();
         if(Arrays.stream(nums).min().getAsInt() == 1) return false;
         int[] factorArray = factorsCalculator(maxElement);
