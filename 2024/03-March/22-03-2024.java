@@ -7,14 +7,19 @@
 
 import java.util.*;
 
-class Node {
-    int data;
-    Node left, right;
-
-    Node(int d) {
-        data = d;
-        left = right = null;
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {
     }
+    ListNode(int val) {
+        this.val = val;
+    }
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+
 }
 
 class Solution {
